@@ -1,6 +1,6 @@
 ## Hi 👋, I'm Bao Minghui 👋
 
-## 
+## Contact Me
 
 📧 **Email**: [baobao.minghui@gmail.com](mailto:baobao.minghui@gmail.com)  
 <!--
