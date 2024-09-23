@@ -1,4 +1,4 @@
-## Hi 👋, I'm Bao Minghui 👋
+## <p align="center">Hi 👋, I'm Bao Minghui 👋</p>
 
 ## Contact Me
 
