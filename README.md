@@ -7,6 +7,7 @@
 
 ## <p align="center">Skills and Technologies</p>
   - ![Java](https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png) Java
-  - ![Java](https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png) Java
+  - ![TypeScript](https://img.icons8.com/color/48/000000/typescript.png) TypeScript
   - ![JavaScript](https://img.icons8.com/color/48/000000/javascript--v1.png) JavaScript
   - ![C++](https://img.icons8.com/color/48/000000/c-plus-plus-logo.png) C++
+  - ![C](https://img.icons8.com/color/48/000000/c.png) C
