@@ -6,7 +6,7 @@
 📧 **Email**: [baobao.minghui@gmail.com](mailto:baobao.minghui@gmail.com)  
 
 ## <p align="center">Skills and Technologies</p>
-**Primary Programming Languages**:
+**Primary Programming Languages**:<br>
 ![Java](https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png) Java
 ![C++](https://img.icons8.com/color/48/000000/c-plus-plus-logo.png) C++
 ![C](https://img.icons8.com/color/48/000000/c.png) C
