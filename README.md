@@ -12,3 +12,4 @@
 ![C](https://img.icons8.com/color/48/000000/c.png) C
 ![TypeScript](https://img.icons8.com/color/48/000000/typescript.png) TypeScript
 ![JavaScript](https://img.icons8.com/color/48/000000/javascript--v1.png) JavaScript
+![Go](https://img.icons8.com/color/48/000000/golang.png) Go
