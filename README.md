@@ -1,7 +1,5 @@
 ## Hi 👋, I'm Bao Minghui 👋
-|     居中文本     |
-|:-----------------:|
-| 这是居中的文本。  |
+
 
 <!--
 **bbcdabao/bbcdabao** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
