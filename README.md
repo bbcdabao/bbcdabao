@@ -1,4 +1,4 @@
-## Hi 👋,I'm Bao Minghui 👋
+## Hi 👋, I'm Bao Minghui 👋
 
 <!--
 **bbcdabao/bbcdabao** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
