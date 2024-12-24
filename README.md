@@ -7,7 +7,7 @@ Welcome to my GitHub profile! I'm a passionate software developer who loves codi
 - 💼 Currently working at ZTE.
 - 🌱 Currently focusing on his own open source projects in his spare time.
 - 🌱 A small open source project has been completed in 2024 and I have tried it initially.
-- 🥅 2025 Goals: Complete an objective dial-test distributed system named "ping-moniter".
+- 🥅 2025 Goals: Complete an objective Synthetic Monitoring distributed system named "ping-moniter".
 - ⚡ Fun fact: In my spare time I enjoy riding motorcycles.
 
 ## 🛠️ Technologies & Tools
