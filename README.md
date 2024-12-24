@@ -30,8 +30,8 @@ Welcome to my GitHub profile! I'm a passionate software developer who loves codi
 Here are a few projects I've worked on:
 
 ### Project 1: [componentsbrz](https://github.com/bbcdabao/componentsbrz)
-- Description: A brief description of what the project does.
-- Technologies: Python, Flask, PostgreSQL
+- Description: I call it the component experimental field, which contains some interesting example and springboot component, which will continue to be added later..
+- Technologies: java, springboot, Node.js, JavaScript, websocket
 
 
 Feel free to check out my repositories and connect with me. I’m always open to collaborating on interesting projects and ideas. Thanks for visiting my profile!
