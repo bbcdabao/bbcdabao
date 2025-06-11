@@ -1,4 +1,4 @@
-# 👋 Hi there, I'm bbcdabao / 大包
+# 👋 Hi there, I'm bbcdabao
 
 Welcome to my GitHub profile!  
 我是一个热爱技术的 **全栈开发工程师**，前端主攻 **Vue3**，后端使用 **Java / Spring Boot**。我热衷于编码、开源和打造稳定可靠的系统。
