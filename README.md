@@ -11,7 +11,7 @@ Welcome to my GitHub profile! I'm a passionate software developer who loves codi
 - ⚡ Fun fact: In my spare time I enjoy riding motorcycles.
 
 ## 🛠️ Technologies & Tools
-- Languages: Python, JavaScript, Java, C++
+- Languages: JavaScript, Java, C++
 - Frameworks: React, Node.js, Express, Django
 - Databases: MySQL, MongoDB, PostgreSQL
 - Tools: Git, Docker, Kubernetes, Jenkins
