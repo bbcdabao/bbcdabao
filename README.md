@@ -26,14 +26,6 @@ Welcome to my GitHub profile!
 
 ---
 
-## 📈 GitHub Stats
-
-![bbcdabao's GitHub stats](https://github-readme-stats.vercel.app/api?username=bbcdabao&show_icons=true&theme=radical)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bbcdabao&layout=compact&theme=radical)
-
----
-
 ## ⏳ Recent Activity (Powered by GitHub Actions)
 
 <!--START_SECTION:activity-->
