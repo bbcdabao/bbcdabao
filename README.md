@@ -1,32 +1,44 @@
-# 👋 Hi there, I'm bbcdabao
+# 👋 Hi there, I'm bbcdabao! ![](https://komarev.com/ghpvc/?username=bbcdabao&style=flat-square&color=brightgreen)
 
-Welcome to my GitHub profile!  
+欢迎来到我的 GitHub 主页！  
 我是一个热爱技术的 **全栈开发工程师**，前端主攻 **Vue3**，后端使用 **Java / Spring Boot**。我热衷于编码、开源和打造稳定可靠的系统。
 
 ---
 
 ## 🚀 About Me / 关于我
 
-- 👨‍💻 20+ years of experience in software R&D
-- 🧑‍💻 Formerly worked at ZTE
-- 🌱 Now focusing on personal open-source projects and independent development
-- ✅ 2024: Completed first open-source experiment
-- 🎯 2025 Goal: Build a distributed monitoring system **"ping-moniter"**
-- 🏍️ Fun fact: I enjoy riding motorcycles
+- 👨‍💻 20+ 年软件研发经验  
+- 🧑‍💻 曾就职于 ZTE  
+- 🌱 目前专注于个人开源项目和独立开发  
+- ✅ 2024：完成第一个开源实验项目  
+- 🎯 2025 目标：构建分布式拨测系统 **“ping-moniter”**  
+- 🏍️ 兴趣爱好：摩托车骑行爱好者
 
 ---
 
 ## 🛠 Tech Stack / 技术栈
 
-- **Frontend**: Vue 3, HTML, CSS
-- **Backend**: Java, Spring Boot, Node.js, Express
-- **Languages**: JavaScript, Java, C++
-- **Database**: MySQL, PostgreSQL, MongoDB
-- **Tools**: Git, Docker, Kubernetes, Jenkins
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat&logo=spring-boot&logoColor=white)
+![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=flat&logo=vue.js&logoColor=4FC08D)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+
+- **Frontend**: Vue 3, HTML, CSS  
+- **Backend**: Java, Spring Boot, Node.js, Express  
+- **Database**: MySQL, PostgreSQL, MongoDB  
+- **Tools**: Git, Docker, Kubernetes, Jenkins  
 
 ---
 
-## ⏳ Recent Activity (Powered by GitHub Actions)
+## 📈 GitHub Stats
+
+![bbcdabao's GitHub stats](https://github-readme-stats.vercel.app/api?username=bbcdabao&show_icons=true&theme=radical)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bbcdabao&layout=compact&theme=radical)
+
+---
+
+## ⏳ Recent Activity
 
 <!--START_SECTION:activity-->
 <!--END_SECTION:activity-->
@@ -43,19 +55,17 @@ Welcome to my GitHub profile!
 ## 🌟 Featured Projects
 
 ### 🔧 [componentsbrz](https://github.com/bbcdabao/componentsbrz)
-- **Description**: A Spring Boot + Node.js component playground.
-- **Tech Stack**: Java, Spring Boot, WebSocket, Node.js
+- **简介**：这是一个 Spring Boot + Node.js 的组件实验场。
+- **技术栈**：Java, Spring Boot, WebSocket, Node.js
 
-<!-- 如果你有截图可以插入如下 -->
 <!-- ![componentsbrz preview](./images/componentsbrz-preview.png) -->
 
 ---
 
 ## 📬 Contact Me / 联系方式
 
-- 📧 Email: [baobao.minghui@gmail.com](mailto:baobao.minghui@gmail.com)
+[![Gmail](https://img.shields.io/badge/Email-baobao.minghui@gmail.com-red?logo=gmail&style=flat-square)](mailto:baobao.minghui@gmail.com)
 
 ---
 
-Thanks for visiting! 🚀  
-欢迎交流，一起成长！🌱
+🌀 *Thanks for visiting! 欢迎交流，一起成长！* 🚀
