@@ -8,8 +8,8 @@ Welcome to my GitHub profile!
 ## 🚀 About Me / 关于我
 
 - 👨‍💻 20+ years of experience in software R&D
-- 💼 Currently at **ZTE**
-- 🌱 Working on personal open-source projects
+- 🧑‍💻 Formerly worked at ZTE
+- 🌱 Now focusing on personal open-source projects and independent development
 - ✅ 2024: Completed first open-source experiment
 - 🎯 2025 Goal: Build a distributed monitoring system **"ping-moniter"**
 - 🏍️ Fun fact: I enjoy riding motorcycles
