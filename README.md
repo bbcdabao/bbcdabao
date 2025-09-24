@@ -52,7 +52,7 @@
 
 ## 🌟 Featured Projects
 
-### 🔧 [componentsbrz](https://github.com/bbcdabao/componentsbrz)
+### 🔧 [componentsbrz](https://github.com/bbcdabao/ping-monitor)
 - **简介**：这是一个 Spring Boot + Node.js 的组件实验场。
 - **技术栈**：Java, Spring Boot, WebSocket, Node.js
 
