@@ -56,8 +56,8 @@ I am a passionate Full-Stack Developer, specializing in Vue3 for frontend and Ja
 - **Description**: This project is a distributed network probing system based on ZooKeeper. It can monitor the availability of various network targets (such as hosts, services, APIs, ports, and middleware like Redis and Kafka). The system uses a plugin-based architecture, supports flexible probing methods, and integrates with Prometheus to output metrics for full observability and alerting.
 - **Tech Stack**: Java, Spring Boot, WebSocket, Node.js
 - **Demo**: http://bbcdabao.com
-- user:admin
-- pass:123456
+- user:    admin
+- pass:    123456
 
 ### 🔧 [componentsbrz](https://github.com/bbcdabao/componentsbrz)
 - **Description**: A component experimentation environment built with Spring Boot and Node.js
