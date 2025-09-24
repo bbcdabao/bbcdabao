@@ -27,7 +27,8 @@
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
 
 - **Frontend**: Vue 3, HTML, CSS
-- **Backend**: Java, Spring Boot, Node.js, Express  
+- **Backend**: Java, Spring Boot, Node.js, Express
+- **Backend Middleware**: Zookeeper \ Redis \ Kafka \  Elasticsearch \ Prometheus \ Quartz \ MyBatis-Plus   ...  e.g.
 - **Database**: MySQL, PostgreSQL, MongoDB  
 - **Tools**: Git, Docker, Kubernetes, Jenkins  
 
