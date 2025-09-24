@@ -1,18 +1,18 @@
 # 👋 Hi there, I'm bbcdabao!
 
-欢迎来到我的 GitHub 主页！  
-我是一个热爱技术的 **全栈开发工程师**，前端主攻 **Vue3**，后端使用 **Java / Spring Boot**，也拥有多年的C / C++ 嵌入设备和服务端开发经验， 我热衷于编码、开源和打造稳定可靠的系统。
+Welcome to my GitHub profile!
+I am a passionate Full-Stack Developer, specializing in Vue3 for frontend and Java / Spring Boot for backend. I also have many years of experience in C / C++ for embedded devices and server-side development. I love coding, contributing to open-source, and building stable and reliable systems.
 
 ---
 
-## 🚀 About Me / 关于我
+## 🚀 About Me
 
-- 👨‍💻 20+ 年软件研发经验 (全栈:前端VUE, 后端:Java技术栈 , C C++ 嵌入或服务端开发等)
-- 🧑‍💻 曾就职于 ZTE  
-- 🌱 目前专注于个人开源项目和独立开发  
-- ✅ 2024：完成第一个开源实验项目  
-- ✅ 2025：构建分布式拨测系统
-- 🏍️ 兴趣爱好：摩托车骑行爱好者
+- 👨‍💻 20+ years of software development experience (Full-stack: Frontend: Vue, Backend: Java stack, C/C++ for embedded or server-side development)
+- 🧑‍💻 Previously worked at ZTE
+- 🌱 Currently focusing on personal open-source projects and independent development
+- ✅ 2024: Completed my first open-source experimental project
+- ✅ 2025: Built a distributed network probing system
+- 🏍️ Hobbies: Motorcycle riding enthusiast
 
 ---
 
@@ -53,19 +53,19 @@
 ## 🌟 Featured Projects
 
 ### 🔧 [ping-monitor](https://github.com/bbcdabao/ping-monitor)
-- **简介**：本项目是一个基于 ZooKeeper 的分布式拨测系统，能够对多种网络目标（如 主机、服务、API、端口，以及各类中间件如 Redis、Kafka 等）进行可用性探测与监控。系统采用 插件化架构，支持灵活扩展拨测方式，并通过与 Prometheus 集成输出指标，实现全链路的可观测性与告警能力。
+- **Description**: This project is a distributed network probing system based on ZooKeeper. It can monitor the availability of various network targets (such as hosts, services, APIs, ports, and middleware like Redis and Kafka). The system uses a plugin-based architecture, supports flexible probing methods, and integrates with Prometheus to output metrics for full observability and alerting.
 - **技术栈**：Java, Spring Boot, WebSocket, Node.js
 
 ### 🔧 [componentsbrz](https://github.com/bbcdabao/componentsbrz)
-- **简介**：这是一个 Spring Boot + Node.js 的组件实验场。
+- **Description**: A component experimentation environment built with Spring Boot and Node.js
 - **技术栈**：Java, Spring Boot, WebSocket, Node.js
   
 ---
 
-## 📬 Contact Me / 联系方式
+## 📬 Contact Me
 
 [![Gmail](https://img.shields.io/badge/Email-baobao.minghui@gmail.com-red?logo=gmail&style=flat-square)](mailto:baobao.minghui@gmail.com)
 
 ---
 
-🌀 *Thanks for visiting! 欢迎交流，一起成长！* 🚀
+🌀 *Thanks for visiting!* 🚀
