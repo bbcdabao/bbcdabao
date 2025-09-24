@@ -26,6 +26,17 @@
 ![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
 
+### 🛠 Backend Middleware
+
+![Zookeeper](https://img.shields.io/badge/Zookeeper-000000?logo=apache-zookeeper&logoColor=white&style=for-the-badge)
+![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white&style=for-the-badge)
+![Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?logo=apache-kafka&logoColor=white&style=for-the-badge)
+![Elasticsearch](https://img.shields.io/badge/Elasticsearch-005571?logo=elasticsearch&logoColor=white&style=for-the-badge)
+![Prometheus](https://img.shields.io/badge/Prometheus-009639?logo=prometheus&logoColor=white&style=for-the-badge)
+![Quartz](https://img.shields.io/badge/Quartz-000000?logo=quartz&logoColor=white&style=for-the-badge)
+![MyBatis-Plus](https://img.shields.io/badge/MyBatis--Plus-000000?logo=mybatis&logoColor=white&style=for-the-badge)
+
+
 - **Frontend**: Vue 3, HTML, CSS
 - **Backend**: Java, Spring Boot, Node.js, Express
 - **Backend Middleware**: Zookeeper \ Redis \ Kafka \  Elasticsearch \ Prometheus \ Quartz \ MyBatis-Plus   ...  e.g.
