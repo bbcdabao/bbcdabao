@@ -53,10 +53,10 @@
 ## 🌟 Featured Projects
 
 ### 🔧 [componentsbrz](https://github.com/bbcdabao/ping-monitor)
-- **简介**：这是一个 Spring Boot + Node.js 的组件实验场。
+- **简介**：本项目是一个基于 ZooKeeper 的分布式拨测系统，能够对多种网络目标（如 主机、服务、API、端口，以及各类中间件如 Redis、Kafka 等）进行可用性探测与监控。系统采用 插件化架构，支持灵活扩展拨测方式，并通过与 Prometheus 集成输出指标，实现全链路的可观测性与告警能力。
 - **技术栈**：Java, Spring Boot, WebSocket, Node.js
 
-### 🔧 [componentsbrz](https://github.com/bbcdabao/ping-monitor)
+### 🔧 [componentsbrz](https://github.com/bbcdabao/componentsbrz)
 - **简介**：这是一个 Spring Boot + Node.js 的组件实验场。
 - **技术栈**：Java, Spring Boot, WebSocket, Node.js
   
