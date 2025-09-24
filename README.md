@@ -26,7 +26,7 @@
 ![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
 
-- **Frontend**: Vue 3, HTML, CSS  
+- **Frontend**: Vue 3, HTML, CSS
 - **Backend**: Java, Spring Boot, Node.js, Express  
 - **Database**: MySQL, PostgreSQL, MongoDB  
 - **Tools**: Git, Docker, Kubernetes, Jenkins  
