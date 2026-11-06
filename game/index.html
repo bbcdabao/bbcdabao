@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="在 bbcdabao 的代码小憩站，玩一局贪吃蛇。">
+<title>Snake · bbcdabao 的代码小憩</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:#09121f;color:#edf6ff}
+*{box-sizing:border-box}body{margin:0;min-height:100svh;background:radial-gradient(ellipse at 15% 0,#193550,transparent 65%);padding:28px 20px}
+main{max-width:980px;margin:auto}nav{display:flex;justify-content:space-between;gap:16px;font-size:14px;margin-bottom:48px}a{color:#8ee4d4;text-underline-offset:5px}
+.layout{display:grid;grid-template-columns:1fr 1.25fr;gap:48px;align-items:center}.eyebrow{color:#73dcca;letter-spacing:3px;font-size:12px}
+h1{font-size:clamp(38px,6vw,64px);line-height:1.1;letter-spacing:-2px;margin:20px 0}h1 span{color:#7de4d1}p{color:#adbed4;line-height:1.9;font-size:15px}
+.chips{display:flex;gap:10px;margin:24px 0}.chip{padding:7px 12px;border:1px solid #30475e;border-radius:30px;color:#bcd0e7;font-size:12px}
+.card{padding:18px;background:#101f31;border:1px solid #2c425a;border-radius:22px;box-shadow:0 20px 80px #0004}
+.scores{display:flex;justify-content:space-between;padding:0 4px 14px;color:#a9bdd4;font-size:12px}.scores strong{display:block;font-size:26px;color:#edf6ff;font-variant-numeric:tabular-nums;margin-top:4px}
+canvas{display:block;width:100%;aspect-ratio:1;background:#0a1522;border-radius:12px;touch-action:none}
+button{font:inherit;border:1px solid #36516a;border-radius:10px;background:#1b3047;color:#edf6ff;cursor:pointer;min-height:44px;padding:10px 15px}
+button:hover{background:#294560}button:focus-visible,a:focus-visible,canvas:focus-visible{outline:3px solid #8ce7d5;outline-offset:4px}button:disabled{opacity:.45;cursor:default}
+.actions{display:flex;gap:10px}.actions button{flex:1}.actions .primary{background:#7de4d1;color:#08241f;border-color:#7de4d1;font-weight:700}
+#status{min-height:28px;text-align:center;font-size:14px;margin:12px 0;color:#bdd2e5}
+.dpad{display:grid;grid-template-columns:repeat(3,48px);gap:6px;justify-content:center;margin:16px 0 0}.dpad button{padding:8px;font-size:20px}.up{grid-column:2}.left{grid-column:1}
+footer{margin-top:32px;color:#738ba7;font-size:12px;text-align:center}
+@media(max-width:700px){body{padding:20px 16px}nav{margin-bottom:30px}.layout{grid-template-columns:1fr;gap:20px}h1{font-size:42px;margin:12px 0}.chips{margin:12px 0}.intro p{margin:10px 0}.card{max-width:480px;width:100%;margin:auto}}
+</style>
+</head>
+<body>
+<main>
+<nav><span>bbcdabao / PLAYGROUND</span><a href="https://github.com/bbcdabao">返回 GitHub ↗</a></nav>
+<div class="layout">
+<section class="intro">
+<div class="eyebrow">TAKE A LITTLE BREAK</div>
+<h1>代码之外，<br><span>来一局？</span></h1>
+<p>欢迎来到我的代码小憩站。<br>吃掉亮点，让小蛇慢慢长大。<br>别撞墙，也别咬到自己。</p>
+<div class="chips"><span class="chip">纯粹的小乐趣</span><span class="chip">无需登录</span></div>
+<p>方向键 / WASD 控制 · 空格暂停<br>手机可以滑动棋盘，或点下方方向按钮。</p>
+</section>
+<section class="card" aria-label="贪吃蛇游戏">
+<div class="scores"><div>本局得分<strong id="score">0</strong></div><div>本机最高<strong id="best">0</strong></div></div>
+<canvas id="board" width="480" height="480" tabindex="0" aria-label="贪吃蛇棋盘，开始后使用方向键或 WASD 操作">请使用支持 Canvas 的浏览器。</canvas>
+<p id="status" role="status" aria-live="polite">准备好了？从一颗小亮点开始。</p>
+<div class="actions"><button id="start" class="primary">开始游戏</button><button id="pause" disabled>暂停</button></div>
+<div class="dpad" aria-label="方向控制"><button class="up" data-dir="up" aria-label="向上">↑</button><button class="left" data-dir="left" aria-label="向左">←</button><button data-dir="down" aria-label="向下">↓</button><button data-dir="right" aria-label="向右">→</button></div>
+</section>
+</div>
+<footer>Made for curious visitors · bbcdabao · 最高分仅保存在当前浏览器</footer>
+</main>
+<script>
+'use strict';
+const board=document.querySelector('#board'),ctx=board.getContext('2d');
+const scoreEl=document.querySelector('#score'),bestEl=document.querySelector('#best');
+const statusEl=document.querySelector('#status'),startBtn=document.querySelector('#start'),pauseBtn=document.querySelector('#pause');
+const size=20,cell=24,dirs={up:{x:0,y:-1},down:{x:0,y:1},left:{x:-1,y:0},right:{x:1,y:0}};
+let snake,food,direction,pending,turned,score,state='ready',timer,best=0;
+try{best=Math.max(0,Number(localStorage.getItem('bbcdabao-snake-best'))||0)}catch{}
+bestEl.textContent=best;
+function placeFood(){
+ const empty=[];
+ for(let y=0;y<size;y++)for(let x=0;x<size;x++)if(!snake.some(p=>p.x===x&&p.y===y))empty.push({x,y});
+ return empty.length?empty[Math.floor(Math.random()*empty.length)]:null;
+}
+function reset(){
+ clearTimeout(timer);snake=[{x:9,y:10},{x:8,y:10},{x:7,y:10}];direction=dirs.right;pending=direction;turned=false;score=0;
+ scoreEl.textContent=score;food=placeFood();draw();
+}
+function draw(){
+ ctx.clearRect(0,0,480,480);ctx.strokeStyle='#152637';ctx.lineWidth=1;
+ for(let i=1;i<size;i++){ctx.beginPath();ctx.moveTo(i*cell,0);ctx.lineTo(i*cell,480);ctx.moveTo(0,i*cell);ctx.lineTo(480,i*cell);ctx.stroke()}
+ if(food){ctx.shadowColor='#ffa97e';ctx.shadowBlur=14;ctx.fillStyle='#ffbd95';ctx.beginPath();ctx.arc(food.x*cell+12,food.y*cell+12,6,0,Math.PI*2);ctx.fill();ctx.shadowBlur=0}
+ snake.forEach((p,i)=>{ctx.fillStyle=i===0?'#b6ffe8':'#4dbda8';ctx.fillRect(p.x*cell+2,p.y*cell+2,20,20)});
+ const head=snake[0],dx=direction.x,dy=direction.y;ctx.fillStyle='#0a2923';
+ for(const side of [-1,1]){ctx.beginPath();ctx.arc(head.x*cell+12+dx*5+dy*side*4,head.y*cell+12+dy*5+dx*side*4,2,0,Math.PI*2);ctx.fill()}
+}
+function finish(won=false){
+ state='over';clearTimeout(timer);pauseBtn.disabled=true;startBtn.textContent='再来一局';
+ statusEl.textContent=won?'满格通关！这条小蛇承包了整块棋盘。':'本局 '+score+' 分。休息一下，再挑战一次？';
+}
+function step(){
+ if(state!=='running')return;
+ direction=pending;turned=false;
+ const head={x:snake[0].x+direction.x,y:snake[0].y+direction.y};
+ const eating=food&&head.x===food.x&&head.y===food.y;
+ const body=eating?snake:snake.slice(0,-1);
+ if(head.x<0||head.x>=size||head.y<0||head.y>=size||body.some(p=>p.x===head.x&&p.y===head.y)){finish();return}
+ snake.unshift(head);
+ if(eating){
+  score+=10;scoreEl.textContent=score;
+  if(score>best){best=score;bestEl.textContent=best;try{localStorage.setItem('bbcdabao-snake-best',String(best))}catch{}}
+  food=placeFood();
+ }else snake.pop();
+ draw();if(!food){finish(true);return}
+ timer=setTimeout(step,Math.max(85,155-Math.floor(score/30)*5));
+}
+function steer(name){
+ const next=dirs[name];if(state!=='running'||turned||!next)return;
+ if(next.x===-direction.x&&next.y===-direction.y)return;
+ if(next.x===direction.x&&next.y===direction.y)return;
+ pending=next;turned=true;
+}
+function togglePause(){
+ if(state==='running'){state='paused';clearTimeout(timer);pauseBtn.textContent='继续';statusEl.textContent='已暂停，慢慢来。'}
+ else if(state==='paused'){state='running';pauseBtn.textContent='暂停';statusEl.textContent='吃掉亮点，继续向前。';timer=setTimeout(step,155)}
+}
+startBtn.addEventListener('click',()=>{reset();state='running';startBtn.textContent='重新开始';pauseBtn.disabled=false;pauseBtn.textContent='暂停';statusEl.textContent='吃掉亮点，继续向前。';board.focus({preventScroll:true});timer=setTimeout(step,155)});
+pauseBtn.addEventListener('click',togglePause);
+document.querySelectorAll('[data-dir]').forEach(button=>button.addEventListener('click',()=>steer(button.dataset.dir)));
+document.addEventListener('keydown',event=>{
+ const map={ArrowUp:'up',ArrowDown:'down',ArrowLeft:'left',ArrowRight:'right',w:'up',s:'down',a:'left',d:'right'};
+ const name=map[event.key]||map[event.key.toLowerCase()];
+ if(name&&(state==='running'||state==='paused')){event.preventDefault();steer(name)}
+ if(event.code==='Space'&&event.target.tagName!=='BUTTON'&&(state==='running'||state==='paused')){event.preventDefault();if(!event.repeat)togglePause()}
+});
+let touchStart=null;
+board.addEventListener('pointerdown',event=>{touchStart={x:event.clientX,y:event.clientY};board.setPointerCapture(event.pointerId)});
+board.addEventListener('pointerup',event=>{
+ if(!touchStart)return;const dx=event.clientX-touchStart.x,dy=event.clientY-touchStart.y;touchStart=null;
+ if(Math.max(Math.abs(dx),Math.abs(dy))<12)return;
+ steer(Math.abs(dx)>Math.abs(dy)?(dx>0?'right':'left'):(dy>0?'down':'up'));
+});
+board.addEventListener('pointercancel',()=>{touchStart=null});
+document.addEventListener('visibilitychange',()=>{if(document.hidden&&state==='running')togglePause()});
+window.addEventListener('blur',()=>{if(state==='running')togglePause()});
+reset();
+</script>
+</body>
+</html>

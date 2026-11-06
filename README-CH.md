@@ -1,71 +1,66 @@
-# 👋 Hi there, I'm bbcdabao!
+![bbcdabao — 从 C/C++ 底层到 Java 服务和 Vue 界面的动态技术连线](assets/profile-banner.svg)
 
-欢迎来到我的 GitHub 主页！  
-我是一个热爱技术的 **全栈开发工程师**，前端主攻 **Vue3**，后端使用 **Java / Spring Boot**，也拥有多年的C / C++ 嵌入设备和服务端开发经验， 我热衷于编码、开源和打造稳定可靠的系统。
+# 你好，我是 bbcdabao 👋
 
----
+**全栈开发者 · 开源爱好者 · 曾就职于中兴（ZTE）**
 
-## 🚀 About Me / 关于我
+从 C/C++ 嵌入式与服务端开发，到 Java 后端和 Vue 前端，我喜欢把系统从底层逻辑一路做到用户界面。现在专注于独立开发和个人开源项目，围绕可复用组件、分布式网络拨测和小型应用的公共底座持续实践。
 
-- 👨‍💻 20+ 年软件研发经验 (全栈:前端VUE, 后端:Java技术栈 , C C++ 嵌入或服务端开发等)
-- 🧑‍💻 曾就职于 ZTE  
-- 🌱 目前专注于个人开源项目和独立开发  
-- ✅ 2024：完成第一个开源实验项目  
-- ✅ 2025：构建分布式拨测系统
-- 🏍️ 兴趣爱好：摩托车骑行爱好者
+🏍️ 键盘之外，我也是一名摩托车骑行爱好者。
 
----
+[English](README.md) · **简体中文**
 
-## 🛠 Tech Stack / 技术栈
+## 🐍 代码之外，来一局？
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat&logo=spring-boot&logoColor=white)
-![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=flat&logo=vue.js&logoColor=4FC08D)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
+[游戏页面与打开方式](game/README.md) · [在线试玩（启用 GitHub Pages 后可用）](https://bbcdabao.github.io/bbcdabao/game/)
 
+## 我做项目的几个特点
 
-![Zookeeper](https://img.shields.io/badge/Zookeeper-000000?logo=apache-zookeeper&logoColor=white&style=for-the-badge)
-![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white&style=for-the-badge)
-![Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?logo=apache-kafka&logoColor=white&style=for-the-badge)
-![Elasticsearch](https://img.shields.io/badge/Elasticsearch-005571?logo=elasticsearch&logoColor=white&style=for-the-badge)
-![Prometheus](https://img.shields.io/badge/Prometheus-009639?logo=prometheus&logoColor=white&style=for-the-badge)
-![Quartz](https://img.shields.io/badge/Quartz-000000?logo=quartz&logoColor=white&style=for-the-badge)
-![MyBatis-Plus](https://img.shields.io/badge/MyBatis--Plus-000000?logo=mybatis&logoColor=white&style=for-the-badge)
+- **跨层思考，也动手落地。** 做过嵌入式、后端服务和 Web 界面，习惯把各个环节连起来看，关心它们如何协同工作。
+- **喜欢把经验沉淀成可复用的东西。** 从 Spring Boot 组件，到统一的账号与权限管理，希望每一次积累都能让下一个项目更容易起步。
+- **用代码探索问题。** 把想法写成项目和示例，尤其关注分布式协调、架构扩展性，以及系统如何稳定运行。
 
+## 从这些项目认识我
 
-- **Frontend**: Vue 3, HTML, CSS
-- **Backend**: Java, Spring Boot, Node.js, Express
-- **Backend Middleware**: Zookeeper \ Redis \ Kafka \  Elasticsearch \ Prometheus \ Quartz \ MyBatis-Plus   ...  e.g.
-- **Database**: MySQL, PostgreSQL, MongoDB  
-- **Tools**: Git, Docker, Kubernetes, Jenkins  
+### [BaoSys](https://github.com/bbcdabao/baosys) — 给小型应用搭一个公共底座
 
----
+面向个人开发者和小团队的多子系统平台底座。通过 Manager 统一管理账号、登录、权限和会话，各个业务系统保留自己的界面与业务逻辑，减少重复搭建基础功能的工作。
 
-## 📈 GitHub Stats
+**可以重点看看：** 共享登录流程、网关与接口授权、会话撤销，以及模块职责的划分。
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bbcdabao&layout=compact&theme=radical)
+`Java 17` · `Spring Boot` · `Spring Cloud Gateway` · `PostgreSQL` · `Vue 3` · `TypeScript`
 
----
+### [ping-monitor](https://github.com/bbcdabao/ping-monitor) — 让分布式拨测协同工作
 
-## 🌟 Featured Projects
+基于 ZooKeeper 的分布式网络拨测系统，协调拨测节点、分配任务，并在 Web 控制台展示结果。通过插件机制扩展拨测方式，把不同的探测能力接入同一套系统。
 
-### 🔧 [ping-monitor](https://github.com/bbcdabao/ping-monitor)
-- **简介**：本项目是一个基于 ZooKeeper 的分布式拨测系统，能够对多种网络目标（如 主机、服务、API、端口，以及各类中间件如 Redis、Kafka 等）进行可用性探测与监控。系统采用 插件化架构，支持灵活扩展拨测方式，并通过与 Prometheus 集成输出指标，实现全链路的可观测性与告警能力。
-- **技术栈**：Java, Spring Boot, WebSocket, Node.js
+**可以重点看看：** 节点注册、分布式协调、插件模板，以及通过 SSE 实时推送拨测结果。
 
-### 🔧 [componentsbrz](https://github.com/bbcdabao/componentsbrz)
-- **简介**：这是一个 Spring Boot + Node.js 的组件实验场。
-- **技术栈**：Java, Spring Boot, WebSocket, Node.js
-  
----
+`Java` · `Spring Boot` · `ZooKeeper` · `Vue 3` · `TypeScript`
 
-## 📬 Contact Me / 联系方式
+*项目进度：仓库文档记录了 Ping、DNS、TCP 三类拨测组件的自测；Prometheus exporter 仍在开发中。*
 
-[![Gmail](https://img.shields.io/badge/Email-baobao.minghui@gmail.com-red?logo=gmail&style=flat-square)](mailto:baobao.minghui@gmail.com)
+### [componentsbrz](https://github.com/bbcdabao/componentsbrz) — 我的组件实验场
 
----
+把 Spring Boot 组件和使用示例放在一起，方便边看边理解。可以从 WebSocket 组件入手，再看看基于它实现的远程 SSH 终端和聊天室。
 
-🌀 *Thanks for visiting! 欢迎交流，一起成长！* 🚀
+**可以重点看看：** 一个通用组件如何被组合成实际应用。
+
+`Java` · `Spring Boot` · `WebSocket` · `Node.js`
+
+## 常用技术
+
+| 方向 | 技术 |
+| --- | --- |
+| 后端与系统开发 | Java、Spring Boot、C、C++、Node.js |
+| 前端开发 | Vue 3、TypeScript、HTML、CSS |
+| 数据与分布式协调 | PostgreSQL、MySQL、Redis、ZooKeeper、Kafka |
+| 工程工具 | Git、Docker、Maven、Vite |
+
+## 一起交流
+
+如果你也在做 Java/Vue 全栈开发、分布式系统或可复用组件，欢迎交流想法。项目中的问题、建议和贡献，也都欢迎。
+
+📬 [baobao.minghui@gmail.com](mailto:baobao.minghui@gmail.com)
+
+感谢来访，挑一个感兴趣的项目逛逛吧！

@@ -1,74 +1,66 @@
-# 👋 Hi there, I'm bbcdabao!
+![bbcdabao — animated connections from C/C++ systems to Java services and Vue interfaces](assets/profile-banner.svg)
 
-Welcome to my GitHub profile!
-I am a passionate Full-Stack Developer, specializing in Vue3 for frontend and Java / Spring Boot for backend. I also have many years of experience in C / C++ for embedded devices and server-side development. I love coding, contributing to open-source, and building stable and reliable systems.
+# Hi, I'm bbcdabao 👋
 
----
+**Full-stack developer · Open-source enthusiast · Formerly at ZTE**
 
-## 🚀 About Me
+From C/C++ on embedded devices and servers to Java services and Vue interfaces, I enjoy building systems end to end. These days, I focus on independent development and personal open-source projects: reusable components, distributed network probing, and shared foundations for small applications.
 
-- 👨‍💻 20+ years of software development experience (Full-stack: Frontend: Vue, Backend: Java stack, C/C++ for embedded or server-side development)
-- 🧑‍💻 Previously worked at ZTE
-- 🌱 Currently focusing on personal open-source projects and independent development
-- ✅ 2024: Completed my first open-source experimental project
-- ✅ 2025: Built a distributed network probing system
-- 🏍️ Hobbies: Motorcycle riding enthusiast
+🏍️ Away from the keyboard, I'm a motorcycle enthusiast.
 
----
+**English** · [简体中文](README-CH.md)
 
-## 🛠 Tech Stack / 技术栈
+## 🐍 Take a little break
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat&logo=spring-boot&logoColor=white)
-![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=flat&logo=vue.js&logoColor=4FC08D)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
+[Game page & setup](game/README.md) · [Play after GitHub Pages is enabled](https://bbcdabao.github.io/bbcdabao/game/)
 
+## What I bring to my projects
 
-![Zookeeper](https://img.shields.io/badge/Zookeeper-000000?logo=apache-zookeeper&logoColor=white&style=for-the-badge)
-![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white&style=for-the-badge)
-![Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?logo=apache-kafka&logoColor=white&style=for-the-badge)
-![Elasticsearch](https://img.shields.io/badge/Elasticsearch-005571?logo=elasticsearch&logoColor=white&style=for-the-badge)
-![Prometheus](https://img.shields.io/badge/Prometheus-009639?logo=prometheus&logoColor=white&style=for-the-badge)
-![Quartz](https://img.shields.io/badge/Quartz-000000?logo=quartz&logoColor=white&style=for-the-badge)
-![MyBatis-Plus](https://img.shields.io/badge/MyBatis--Plus-000000?logo=mybatis&logoColor=white&style=for-the-badge)
+- **A view across the stack.** My experience spans embedded development, backend services, and web interfaces. I like understanding how the pieces work together.
+- **An eye for reusable building blocks.** From Spring Boot components to shared account and permission management, I look for foundations that make the next project easier to build.
+- **Hands-on exploration.** I turn ideas into code and examples, with particular interests in distributed coordination, extensible architectures, and reliable systems.
 
+## Explore my work
 
-- **Frontend**: Vue 3, HTML, CSS
-- **Backend**: Java, Spring Boot, Node.js, Express
-- **Backend Middleware**: Zookeeper \ Redis \ Kafka \  Elasticsearch \ Prometheus \ Quartz \ MyBatis-Plus   ...  e.g.
-- **Database**: MySQL, PostgreSQL, MongoDB  
-- **Tools**: Git, Docker, Kubernetes, Jenkins  
+### [BaoSys](https://github.com/bbcdabao/baosys) — a shared foundation for small applications
 
----
+A platform foundation for independent developers and small teams working on multiple applications. Its Manager system centralizes accounts, login, permissions, and sessions, while business applications keep their own interfaces and logic.
 
-## 📈 GitHub Stats
+**Worth exploring:** shared login flows, gateway and API authorization, session revocation, and clear module boundaries.
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bbcdabao&layout=compact&theme=radical)
+`Java 17` · `Spring Boot` · `Spring Cloud Gateway` · `PostgreSQL` · `Vue 3` · `TypeScript`
 
----
+### [ping-monitor](https://github.com/bbcdabao/ping-monitor) — distributed network probing
 
-## 🌟 Featured Projects
+A ZooKeeper-based system that coordinates probing workers, distributes tasks, and displays results in a web console. A plugin mechanism makes it possible to add new probe types.
 
-### 🔧 [ping-monitor](https://github.com/bbcdabao/ping-monitor)
-- **Description**: This project is a distributed network probing system based on ZooKeeper. It can monitor the availability of various network targets (such as hosts, services, APIs, ports, and middleware like Redis and Kafka). The system uses a plugin-based architecture, supports flexible probing methods, and integrates with Prometheus to output metrics for full observability and alerting.
-- **Tech Stack**: Java, Spring Boot, WebSocket, Node.js
-- **Demo**: http://bbcdabao.com
-- user:    admin
-- pass:    123456
+**Worth exploring:** worker registration, distributed coordination, plugin templates, and live results delivered through SSE.
 
-### 🔧 [componentsbrz](https://github.com/bbcdabao/componentsbrz)
-- **Description**: A component experimentation environment built with Spring Boot and Node.js
-- **Tech Stack**: Java, Spring Boot, WebSocket, Node.js
-  
----
+`Java` · `Spring Boot` · `ZooKeeper` · `Vue 3` · `TypeScript`
 
-## 📬 Contact Me
+*Project status: the README reports self-testing for Ping, DNS, and TCP probes; the Prometheus exporter is still under development.*
 
-[![Gmail](https://img.shields.io/badge/Email-baobao.minghui@gmail.com-red?logo=gmail&style=flat-square)](mailto:baobao.minghui@gmail.com)
+### [componentsbrz](https://github.com/bbcdabao/componentsbrz) — my component playground
 
----
+A collection of Spring Boot components and examples that show how to use them. Start with the WebSocket component and its remote SSH terminal and chatroom examples.
 
-🌀 *Thanks for visiting!* 🚀
+**Worth exploring:** how a reusable component becomes a working application.
+
+`Java` · `Spring Boot` · `WebSocket` · `Node.js`
+
+## My toolkit
+
+| Area | Technologies |
+| --- | --- |
+| Backend & systems | Java, Spring Boot, C, C++, Node.js |
+| Frontend | Vue 3, TypeScript, HTML, CSS |
+| Data & coordination | PostgreSQL, MySQL, Redis, ZooKeeper, Kafka |
+| Engineering tools | Git, Docker, Maven, Vite |
+
+## Let's connect
+
+Interested in Java/Vue development, distributed systems, or reusable components? I'd be happy to exchange ideas. Questions, issues, and contributions to my projects are welcome.
+
+📬 [baobao.minghui@gmail.com](mailto:baobao.minghui@gmail.com)
+
+Thanks for stopping by — pick a project above and take a look around!
